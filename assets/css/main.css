@@ -304,11 +304,13 @@ header / navbar
 
 .header-area {
   background-color: #fff;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 100;
+  /* z-index: 1; */
   height: 100px;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
@@ -1689,7 +1691,9 @@ footer .copyright p {
   /* color: #afafaf; */
   margin-top: 50px;
   padding: 20px 0px;
-  font-weight: 300;
+  /* font-weight: 300; */
+  /* font-size: 15px; */
+  font-weight: 250;
 }
 
 footer .copyright p a {
