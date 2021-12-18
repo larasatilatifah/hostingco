@@ -203,7 +203,8 @@ body {
 }
 
 .main-blue-button a {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
   background-color: #6d42ff;
   font-size: 15px;
   font-weight: 400;
@@ -257,7 +258,24 @@ body {
   transition: all .3s;
 }
 
-.main-red-button-hover a:hover {
+.main-red-button-hover2 a {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  line-height: 32px;
+  color: #fff !important;
+  /* padding: 12px 25px; */
+  border-radius: 23px;
+  /* letter-spacing: 0.25px; */
+  transition: all .3s;
+
+  width: 50px;
+  height: 32px;
+  text-align: center;
+}
+
+.main-red-button-hover a:hover,
+.main-red-button-hover2 a:hover {
   background-color: #6d42ff;
 }
 
@@ -359,13 +377,13 @@ header / navbar
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
-  padding-left: 40px;
+  padding-left: 5px;
 }
 
 .header-area .main-nav .nav li:last-child a ,
@@ -381,7 +399,9 @@ header / navbar
 }
 
 .header-area .main-nav .nav li:last-child .main-red-button-hover a:hover,
-.background-header .main-nav .nav li:last-child .main-red-button-hover a:hover {
+.background-header .main-nav .nav li:last-child .main-red-button-hover a:hover,
+.header-area .main-nav .nav li:last-child .main-red-button-hover2 a:hover,
+.background-header .main-nav .nav li:last-child .main-red-button-hover2 a:hover {
   background-color: #6d42ff !important;
 }
 
@@ -1304,13 +1324,14 @@ Subscribe
 }
 
 .subscribe .inner-content form input {
-  width: 38.5%;
+  /* width: 38.5%; */
+  width: 75%;
   margin-top: 20px;
   line-height: 40px;
   background-color: transparent;
   border: none;
   outline: none;
-  padding: 0px 20px;
+  padding: 0px 30px;
   font-size: 15px;
   color: #2a2a2a;
 }
@@ -1339,7 +1360,7 @@ Subscribe
 }
 
 .subscribe .inner-content form button:hover {
-  background-color: #ff695f;
+  background-color: #6d42ff;
 }
 
 
@@ -1404,6 +1425,10 @@ contact
   font-weight: 400;
   line-height: 25px;
   text-transform: none;
+}
+
+.contact-us .info span a:hover {
+  color: #6d42ff;
 }
 
 form#contact {
@@ -1692,8 +1717,9 @@ footer .copyright p {
   margin-top: 50px;
   padding: 20px 0px;
   /* font-weight: 300; */
-  /* font-size: 15px; */
+  font-size: 13px;
   font-weight: 250;
+  letter-spacing: 0.35px;
 }
 
 footer .copyright p a {
@@ -1732,6 +1758,11 @@ footer .copyright p a {
   display: inline-block;
   background: #6d42ff;
 }
+
+.social-login a:hover {
+  background: #ff695f;
+}
+
   .social-login a span {
     position: absolute;
     top: 50%;
@@ -1742,8 +1773,6 @@ footer .copyright p a {
   .social-login a:hover {
     color: #fff;
   }
-
-
 
       .control {
         top: 25px;
@@ -1834,6 +1863,10 @@ footer .copyright p a {
   .create-account a {
     font: 30px;
     color: #6d42ff;
+  }
+
+  .create-account a:hover {
+    color: #ff695f;
   }
 
 
@@ -1940,6 +1973,13 @@ responsive
 }
 
 @media (max-width: 767px) {
+  .main-banner .item h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #2a2a2a;
+    line-height: 52px;
+  }
+
   .main-banner .item .down-buttons {
     display: inline-block;
   }
@@ -1958,7 +1998,7 @@ responsive
     padding: 60px 30px 100px 30px;
   }
   .subscribe .inner-content form input {
-    width: 49%;
+    width: 100%;
   }
   .subscribe .inner-content form button {
     display: inline-block;
